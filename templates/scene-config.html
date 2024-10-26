@@ -1,0 +1,31 @@
+<!-- modules/isometric-perspective/templates/scene-config.html -->
+<div class="tab isometric" data-tab="isometric">
+    <section>
+        <div class="form-group">
+            <label>Enable Isometric Perspective for this Scene</label>
+            <div class="form-fields">
+                <input type="checkbox" name="flags.isometric-perspective.isometricEnabled"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Transform Background Image</label>
+            <div class="form-fields">
+                <input type="checkbox" name="flags.isometric-perspective.isometricBackground"/>
+            </div>
+            <p class="notes">Apply isometric transformation to the background image</p>
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+            <label>Isometric Scale</label>
+            <div class="form-fields">
+                <input type="range" name="flags.isometric-perspective.isometricScale" 
+                       min="0.5" max="2" step="0.1" value="1"/>
+                <span class="range-value">1</span>
+            </div>
+            <p class="notes">Adjust scale of art when in isometric perspective (0.5x to 2x)</p>
+        </div>
+    </section>
+</div>

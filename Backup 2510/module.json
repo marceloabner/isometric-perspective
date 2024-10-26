@@ -1,0 +1,13 @@
+{
+  "id": "isometric-perspective",
+  "title": "Isometric Perspective",
+  "description": "Altera a perspectiva do canvas para isometrica.",
+  "esmodules": [
+    "scripts/isoCanvas.js"
+  ],
+  "version": "0.1",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@pixi/constants",
+  "version": "6.5.10",
+  "main": "dist/cjs/constants.js",
+  "module": "dist/esm/constants.mjs",
+  "bundle": "dist/browser/constants.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./dist/esm/constants.mjs"
+      },
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./dist/cjs/constants.js"
+      }
+    }
+  },
+  "description": "Constants used across PixiJS",
+  "author": "Mat Groves",
+  "contributors": [
+    "Matt Karl <matt@mattkarl.com>"
+  ],
+  "homepage": "http://pixijs.com/",
+  "bugs": "https://github.com/pixijs/pixi.js/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixijs/pixi.js.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "*.d.ts"
+  ],
+  "gitHead": "8cdbf55064b7adc05f65c51e177f1c22f7329f0f"
+}

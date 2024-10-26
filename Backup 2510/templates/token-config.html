@@ -1,0 +1,53 @@
+<!-- modules/isometric-perspective/templates/token-config.html -->
+<div class="tab" data-tab="isometric">
+  <div class="form-group offset-point">
+    <label>Deslocamento da Arte</label>
+    <div class="form-fields">
+      <label class="axis">Horizontal</label>
+      <input type="number" name="flags.isometric-perspective.offsetX" 
+             value="{{offsetX}}"
+             step="1" />
+      <label class="axis">Vertical</label>
+      <input type="number" name="flags.isometric-perspective.offsetY"
+             value="{{offsetY}}"
+             step="1" />
+    </div>
+    <p class="notes">Desloca a posição da arte do token em pixels.</p>
+  </div>
+
+  <div class="form-group">
+    <label>Escala Isométrica</label>
+    <div class="form-fields">
+      <input type="range" name="flags.isometric-perspective.scale"
+             value="{{scale}}"
+             min="0.01" max="3" step="0.01"
+             class="scale-slider" />
+      <span class="range-value">{{scale}}</span>
+    </div>
+    <p class="notes">Ajusta a escala do token quando em modo isométrico.</p>
+  </div>
+
+  <style>
+    .offset-point .form-fields {
+      display: flex;
+      gap: 0.5em;
+    }
+    .offset-point .axis {
+      flex: 0 0 60px;
+      line-height: var(--form-field-height);
+      text-align: center;
+      color: var(--color-text-dark-secondary);
+    }
+    .offset-point input {
+      flex: 1;
+    }
+    .scale-slider {
+      flex: 4;
+    }
+    .range-value {
+      flex: 1;
+      text-align: center;
+      line-height: var(--form-field-height);
+    }
+  </style>
+</div>
